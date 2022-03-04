@@ -1,0 +1,29 @@
+#
+#
+#
+Sigma:
+    letter0
+    letter1
+End
+#
+#
+States:
+    state0 ,S
+    state1
+    state2
+    state3 ,F
+    state4 ,F
+End
+#
+Transitions:
+    state0 ,letter0 ,state1
+    state0 ,letter1 ,state2
+    state1 ,letter0 ,state3
+    state1 ,letter1 ,state2
+    state2 ,letter0 ,state1
+    state2 ,letter1 ,state4
+    state3 ,letter0 ,state3
+    state3 ,letter1 ,state2
+    state4 ,letter0 ,state1
+    state4 ,letter1 ,state4
+End
