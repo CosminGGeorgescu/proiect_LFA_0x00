@@ -1,4 +1,5 @@
-f=open("input.txt", 'r')
+import sys
+f=open(sys.argv[1], 'r')
 states=[]
 alphabet=[]
 F=[]
@@ -28,12 +29,7 @@ while line:=f.readline():
             for x in line:
                 t.append(int(x[len(x)-2]))
             transitions[(t[0], t[2])]=t[1]
-print(states)
-print(alphabet)
-print(S)
-print(F)
-print(transitions)
-input=input() #inputul de validat
+input=sys.argv[2] #inputul de validat
 i=S     #incepem de la inceput
 for x in input:  #pentru fiecare litera a inputului
     j=0; s=0
