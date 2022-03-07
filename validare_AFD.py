@@ -1,4 +1,5 @@
-f=open("input.txt", 'r')
+import sys
+f=open(sys.argv[1], 'r')
 states=[]
 alphabet=[]
 F=[]
