@@ -16,32 +16,59 @@ dfa_acceptance_engine.py dfa_config_file <word_to_test>
 
 
 DFA input file must be of the following format:
-#
+
+#ㅤ
+
 #comment lines (skip them)
-#
+
+#ㅤ
+
 Sigma:
+
   letter1
+
   letter2
+
   . . .
+
 End
-#
+
+#ㅤ
+
 #comment lines (skip them)
-#
+
+#ㅤ
+
 States:
+
   state1
+  
   state2
+  
   state3 ,F
+  
   . . .
+  
   stateK ,S
+  
   . . .
+
 End
-#
+
+#ㅤ
+
 #comment lines (skip them)
-#
+
+#ㅤ
+
 Transitions:
+  
   stateX ,letterY ,stateZ
+  
   stateX ,letterY ,stateZ
+  
   . . .
+
 End
 
 
