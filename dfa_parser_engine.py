@@ -5,7 +5,6 @@ alphabet=[]
 S=0
 F=[]
 transitions={}
-#rezolva acceptarea si a char-urilor la States si Sigma
 while line:=f.readline():   #cat timp mai sunt linii de citit
     if "Sigma" in line:    #daca pe linie e Sigma atunci incepe citirea alfabetului
         while "End" not in (line:=f.readline()):
